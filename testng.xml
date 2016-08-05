@@ -1,0 +1,21 @@
+<suite name="Suite" parallel="none">
+	<parameter name="properties" value="Test.properties" />
+	<test name="Test checks tutorial scenarios">
+		<classes>
+
+			<class name="manage.ScriptsTestNG" />
+			<methods>
+				<include name="checkLoginFlow" />
+	
+			</methods>
+		</classes>
+
+	</test>
+	<listeners>
+		<listener class-name="atu.testng.reports.listeners.ConfigurationListener"></listener>
+		<listener class-name="atu.testng.reports.listeners.ATUReportsListener"></listener>
+		<listener class-name="atu.testng.reports.listeners.MethodListener"></listener>
+	</listeners>
+
+	
+</suite> <!-- Suite -->
